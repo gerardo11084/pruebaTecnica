@@ -1,0 +1,32 @@
+ 
+
+CREATE TABLE ZONAS_WIF_PEREIRA 
+(
+    ID INT,
+    CONVENIO VARCHAR(100),
+    OPERADOR VARCHAR(100),
+    DEPARTAMENTO VARCHAR(100),
+    MUNICIPIO VARCHAR(100),
+    NOMBRE_ZONA_WIFI VARCHAR(100),
+    COORDENADAS VARCHAR(100),
+    DIRECCION VARCHAR(100),
+    TOTAL_APPS VARCHAR(100),
+    CAPACIDAD_USUASRIOS VARCHAR(100)
+);
+
+
+
+var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send(); 
+            
+            request.onload = function() {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+            };      
+
+
+
+
